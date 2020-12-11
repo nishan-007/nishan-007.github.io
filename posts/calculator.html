@@ -24,10 +24,11 @@ var calculate = document.getElementById('calculate');
 
 calculate.onclick = function() {
 
-    var firstNumber = document.getElementById("first_number");
-    var secondNumber = document.getElementById("second_number");
+    var firstNumber = document.getElementById("first_number").value;
+    var secondNumber = document.getElementById("second_number").value;
+console.log(firstNumber);
 
-    var answer = firstNumber + secondNumber
+    var answer = Number(firstNumber) + Number(secondNumber)
 
     alert(answer);
 
